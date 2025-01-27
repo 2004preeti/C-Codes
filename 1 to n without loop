@@ -1,0 +1,12 @@
+void fn(int i,int n){
+    if(i>n){
+        return;
+    }
+    else{
+        cout<<i<<" ";
+        fn(i+1,n);
+    }
+}
+vector<int> printNos(int x) {
+   fn(1,x);
+}
